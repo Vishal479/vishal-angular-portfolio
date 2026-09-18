@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
-  menuOpen = false;
+  menuOpen = true;
   skills = [
     { name: 'Angular', value: 88, icon: 'A', color: '#dd0031' },
     { name: 'TypeScript', value: 82, icon: 'TS', color: '#3178c6' },
@@ -67,6 +67,12 @@ export class AppComponent implements AfterViewInit, OnDestroy {
       });
     });
     this.cleanup = () => ctx.revert();
+    // scrollTo(sectionId: string) {
+    //   document.getElementById(sectionId)?.scrollIntoView({
+    //     behavior: 'smooth',
+    //     block: 'start'
+    //   });
+    // }
   }
 
   private cleanup: (() => void) | undefined;
