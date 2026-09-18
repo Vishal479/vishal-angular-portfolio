@@ -1,0 +1,1 @@
+Place your resume PDF here and name it Vishal-Kumar-Resume.pdf. Replace the VK initials block in app.component.html with your own photo if desired.
